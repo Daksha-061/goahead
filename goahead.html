@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGCSE Biology Questions</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #00695c;
+        }
+
+        p {
+            color: #424242;
+        }
+
+        button {
+            background-color: #00695c;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to IGCSE Biology Questions</h1>
+    <p>Click the button below or say "Give me Questions!" to receive biology questions.</p>
+
+    <button onclick="generateQuestions()">Get Questions</button>
+
+    <script>
+        // Function to generate and display biology questions
+        function generateQuestions() {
+            // You can replace this with actual biology questions
+            const biologyQuestions = [
+                "What is the function of mitochondria?",
+                "Explain the process of photosynthesis.",
+                "Define osmosis.",
+                
+            ];
+
+            // Randomly select a question
+            const randomIndex = Math.floor(Math.random() * biologyQuestions.length);
+            const selectedQuestion = biologyQuestions[randomIndex];
+
+            // Display the question
+            alert("Biology Question: " + selectedQuestion);
+        }
+    </script>
+
+</body>
+</html>
